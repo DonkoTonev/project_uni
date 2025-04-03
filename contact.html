@@ -1,0 +1,131 @@
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width">
+
+   <title>Learning management system.</title>
+
+   <meta name="description"
+      content="Learning management system.usong this template you can get language and admission information  ">
+   <meta property="og:title" content="Lms - Home Page">
+   <meta property="og:description" content="Home page">
+   <meta property="og:image" content="https://www.learning.com/image.jpg">
+   <meta property="og:image:alt" content="Image description">
+   <meta property="og:locale" content="en_GB">
+   <meta property="og:type" content="website">
+   <meta name="twitter:card" content="summary_large_image">
+   <meta property="og:url" content="https://www.learning.com/page">
+
+   <link rel="icon" href="/favicon.ico">
+   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+   <link rel="manifest" href="/my.webmanifest">
+   <meta name="theme-color" content="#FF00FF">
+
+   <link rel="stylesheet" href="./assets/css/all.css">
+   <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+   <link rel="stylesheet" href="./assets/css/swiper-bundle.css">
+   <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+   <link rel="stylesheet" href="./assets/css/style.css">
+   <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+
+<body>
+
+   <main class="body-wrapper">
+      <div id="header"></div>
+
+      <script>
+        fetch('header.html')
+          .then(response => response.text())
+          .then(data => document.getElementById('header').innerHTML = data)
+          .catch(error => console.error('Error loading footer:', error));
+      </script>
+
+      <section id="contactus-section" class="contact gray-bg mt-5">
+         <div class="container">
+             <div class="row">
+                 <div class="col-lg-6">
+                     <div class="section-title">
+                         <h2>Get In Touch</h2>
+                         <p>Tell us something about your intersting courses.</p>
+                     </div>
+                 </div>
+             </div>
+             <div class="row flex-row-reverse">
+                 <div class="col-md-7 col-lg-8 m-15px-tb">
+                     <div class="contact-form">
+                          <form action="/" method="post" class="contactform contact_form" id="contact_form">
+                             <div class="returnmessage valid-feedback p-15px-b" data-success="Your message has been received, We will contact you soon."></div>
+                             <div class="empty_notice invalid-feedback p-15px-b"><span>Please Fill Required Fields</span></div>
+                             <div class="row">
+                                 <div class="col-md-6">
+                                     <div class="form-group">
+                                         <input id="name" type="text" placeholder="Full Name" class="form-control"> 
+                                     </div>
+                                 </div>
+                                 <div class="col-md-6">
+                                     <div class="form-group">
+                                         <input id="email" type="text" placeholder="Email Address" class="form-control">  
+                                     </div>
+                                 </div>
+                                 <div class="col-12">
+                                     <div class="form-group">
+                                         <input id="subject" type="text" placeholder="Subject" class="form-control"> 
+                                     </div>
+                                 </div>
+                                 <div class="col-md-12">
+                                     <div class="form-group">
+                                         <textarea id="message" placeholder="Message" class="form-control" rows="3"></textarea> 
+                                     </div>
+                                 </div>
+                                 <div class="col-md-12">
+                                     <div class="send">
+                                         <a id="send_message" class="lms-btn theme" href="#"><span>Contact Us</span> <i class="arrow"></i></a>
+                                     </div>
+                                 </div>
+                             </div>
+                         </form>
+                     </div>
+                 </div>
+                 <div class="col-md-5 col-lg-4 m-15px-tb">
+                     <div class="contact-name">
+                         <h5>Mail</h5>
+                         <p>info@domainname.com</p>
+                     </div>
+                     <div class="contact-name">
+                         <h5>Visit My Studio</h5>
+                         <p>A108 Adam Street <br>New York, NY 535022</p>
+                     </div>
+                     <div class="contact-name">
+                         <h5>Phone</h5>
+                         <p>+1 5589 55488 55</p>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </section>
+
+
+   </main>
+
+   <div id="footer"></div>
+
+   <script>
+     fetch('footer.html')
+       .then(response => response.text())
+       .then(data => document.getElementById('footer').innerHTML = data)
+       .catch(error => console.error('Error loading footer:', error));
+   </script>
+
+   <script src="./assets/js/vendor/jquery-3.6.0.min.js"></script>
+   <script src="./assets/js/bootstrap.min.js"></script>
+   <script src="./assets/js/vendor/swiper-bundle.js"></script>
+   <script src="./assets/js/vendor/swiper-bundle.min.js"></script>
+   <script src="./assets/js/vendor/plugin.js"></script>
+   <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>
